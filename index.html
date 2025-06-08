@@ -3,15 +3,19 @@
     <head>  
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Web Page</title>
+        <title>Amons Blinds and Curtains</title>
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
     </head>
     <body>  
         <header>    
-            <h1>Welcome to My Web Page</h1>
+            <h1 class="logo-title">Amons Blins And Curtains cc.</h1>
+            <div class="logo">
+                <img src="logo.png" alt="Amons Blinds Logo" class="logo-image">
+            </div>
+
             <nav class="main-nav">
-                <ul class="nav-list">
+                <ul class="navbar">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
@@ -21,19 +25,78 @@
         </header>
         <main>
             <section id="home">
-                <h2>Home Section</h2>
-                <p>This is the home section of the page.</p>
-                <a href="#about" class="btn">Learn More</a>
+                <div class="hero">
+                    <h2>Amons Blinds</h2>
+                    <p>Welcome to Amons Blinds and Curtains, your one-stop solution for all your window treatment needs.</p>
+                    <a href="#services" class="button">Explore Services</a>
+
+                </div>
             </section>
             <section id="services">
-                <h2>Services Section</h2>
+                <h2 class="title">Our Services</h2>
+
                 <p>Details about the services offered can be found here.</p>
+                <div class="service cards">
+                    <div class="card">
+                        <h3>Service 1</h3>
+                        <p>Description of Service 1.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Service 2</h3>
+                        <p>Description of Service 2.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Service 3</h3>
+                        <p>Description of Service 3.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery">
+                <h2>Potifolio</h2>
+                <p>Images of our work can be found here.</p>
+                <div class="gallery">
+                    <img src="image1.jpg" alt="pic 1">
+                    <img src="image2.jpg" alt="pic 2">
+                    <img src="image3.jpg" alt="pic 3">
+                </div>
+            </section>
             <section id="about">
                 <h2>About Section</h2>
                 <p>This section contains information about the page.</p>
+                <div class="employees">
+                    <div class="employee">
+                        <h3>Employee 1</h3>
+                        <p>Details about Employee 1.</p>
+                    </div>
+                    <div class="employee">
+                        <h3>Employee 2</h3>
+                        <p>Details about Employee 2.</p>
+                    </div>
+                    <div class="employee">
+                        <h3>Employee 3</h3>
+                        <p>Details about Employee 3.</p>
+                    </div>         
+                </div>
+                <div class="about-content">
+                    <p>More information about the company can be placed here.</p>
+                    <p>We are dedicated to providing the best quality blinds and curtains for your home or office.</p>
+                </div>
             </section>
             <section id="contact">
                 <h2>Contact Section</h2>
                 <p>Feel free to reach out through this section.</p>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                
             </section>
     </body>
